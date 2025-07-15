@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+header {
+  position: relative;
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+  padding: 3rem 1rem 2.5rem;
+  text-align: center;
+  border-bottom: 3px solid #c084fc;
+  box-shadow: 0 0 15px #000;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fffacd;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+  animation: shimmer 3s linear infinite;
+}
+
+header .star-shine {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, transparent 70%);
+  animation: star-glide 5s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { text-shadow: 0 0 10px #facc15, 0 0 20px #facc15; }
+  50% { text-shadow: 0 0 20px #fff5b0, 0 0 30px #fde68a; }
+  100% { text-shadow: 0 0 10px #facc15, 0 0 20px #facc15; }
+}
+
+@keyframes star-glide {
+  0% { transform: translate(0%, 0%); }
+  100% { transform: translate(50%, 50%); }
+}
+
+header .quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #d4d4d4;
+  z-index: 2;
+  position: relative;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio-description {
+  font-size: 1.05rem;
+  color: #ccc;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 3px solid #2563eb;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.button-group {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #49e451;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #3b82f6;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  background: #111827;
+  border-top: 1px solid #333;
+}

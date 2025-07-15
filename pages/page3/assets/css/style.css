@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+header {
+  background: #111827;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #38bdf8;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: #38bdf8;
+  display: inline-block;
+  position: relative;
+  animation: waveFloat 5s ease-in-out infinite;
+}
+
+@keyframes waveFloat {
+  0%   { transform: translateX(0) translateY(0) rotate(0deg); }
+  20%  { transform: translateX(10px) translateY(-5px) rotate(-1deg); }
+  40%  { transform: translateX(-10px) translateY(5px) rotate(1deg); }
+  60%  { transform: translateX(8px) translateY(-4px) rotate(-1deg); }
+  80%  { transform: translateX(-8px) translateY(4px) rotate(1deg); }
+  100% { transform: translateX(0) translateY(0) rotate(0deg); }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-section {
+  flex: 2;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-section img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  border: 4px solid #facc15;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lineage-section {
+  flex: 1;
+  padding: 1rem;
+  background-color: rgba(17, 24, 39, 0.9);
+  border-left: 2px solid #facc15;
+  border-radius: 0 12px 12px 0;
+}
+
+.lineage-section h2 {
+  color: #facc15;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.family-member {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.family-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #facc15;
+  box-shadow: 0 0 8px #000;
+}
+
+.family-member p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #f3f3f3;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.nav-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #38bdf8;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #ffaa00;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #111827;
+  padding: 1rem;
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
