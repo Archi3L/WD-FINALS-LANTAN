@@ -2,34 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Asta</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Chat Style</title>
+
+  <!-- Fonts: JetBrains Mono for chat, Orbitron for header -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/1.css" />
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+  <!-- Background animation -->
+  <div id="particles-js"></div>
 
-  <header>
-    <h1>Asta</h1>
-    <p class="subtitle">"My Magic is Never Giving Up!"</p>
+  <!-- Main layout -->
+  <div class="content-wrapper">
+  <header class="site-header">
+   <h1><span class="logo-glow">🎮</span> About Me</h1>
   </header>
 
-  <div class="content-wrapper">
-    <div class="image-box"></div>
 
-    <h1>Asta</h1>
-    <p class="quote">"My Magic is Never Giving Up!"</p>
-    <p class="description">
-      Asta is the determined, magic-less hero of Black Clover who wields anti-magic swords with raw strength and fierce conviction. 
-      Despite being born without magic, he strives to become the Wizard King and proves his worth with unmatched willpower and loyalty.
-    </p>
+    <main class="chat-container" id="chat"></main>
 
-    <div class="button-group">
-      <a class="next-button" href="../../index.html">← Back to Main</a>
-      <a class="next-button" href="../page2/index.html">Next: Yuno →</a>
+    <div class="button-container">
+      <a href="../page2/index.html" class="start-btn">Next: Hobbies & Skills</a>
     </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Archi Lantan</p>
+    </footer>
   </div>
 
-  <footer>Lantan Archi Clemenz C. © 2025</footer>
+  <!-- Chat Script -->
+  <script src="./assets/js/1.js"></script>
 
+  <!-- Particles Configuration -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50 },
+        color: { value: "#00ffc3" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00ffc3",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
 </body>
 </html>

@@ -2,44 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yuno</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hobbies & Skills</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/2.css" />
 </head>
 <body>
+  <!-- Matrix Canvas -->
+  <canvas id="matrix-canvas"></canvas>
 
-  <header>
-    <h1>Yuno</h1>
-    <div class="star-shine"></div>
-    <p class="quote">"I will become the Wizard King, no matter what."</p>
-  </header>
-
-  <div class="content">
-    <p class="bio-description">
-      Yuno, Asta’s childhood rival and best friend, is a prodigy blessed with immense magical talent and noble lineage. 
-      As a bearer of the Four-Leaf Clover Grimoire and host of the wind spirit Sylph, Yuno is known for his calm demeanor and sharp intellect. 
-      Later, he inherits Star Magic from his royal Spade Kingdom bloodline, combining elegance and overwhelming power. 
-      His unwavering resolve to claim the title of Wizard King puts him on a parallel path of destiny beside Asta.
-    </p>
-
-    <div class="image-row">
-      <div class="image-card">
-        <img src="./assets/Yuno wind.webp" alt="Yuno with Wind Grimoire">
-        <div class="description">Yuno with his Wind Grimoire – graceful and powerful with Sylph by his side.</div>
-      </div>
-      <div class="image-card">
-        <img src="./assets/Star Magic.webp" alt="Yuno with Star Magic">
-        <div class="description">Yuno after gaining the Spade Kingdom's Star Magic – combining wind and celestial forces.</div>
-      </div>
+  <div class="content-wrapper">
+    <!-- Terminal Header -->
+    <div class="terminal-path">
+      ~/Archi/hobbies-skills<span class="blinking-cursor">$</span>
     </div>
 
-    <div class="button-group">
-      <a class="nav-button" href="../page1/index.html">← Back to Asta</a>
-      <a class="nav-button" href="../page3/index.html">Next: Noelle →</a>
+    <!-- Terminal -->
+    <main class="terminal-container" id="terminal"></main>
+
+    <!-- Button -->
+    <div class="button-container">
+      <a href="../page3/index.html" class="start-btn">Next: Educational Background</a>
     </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Archi Lantan</p>
+    </footer>
   </div>
 
-  <footer>Lantan Archi Clemenz C. © 2025</footer>
-
+  <!-- Scripts -->
+  <script src="./assets/js/2.0.js"></script>
+  <script src="./assets/js/2.js"></script>
 </body>
 </html>

@@ -2,52 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Noelle Silva</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educational Background</title>
+  <link rel="stylesheet" href="./assets/css/3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+  <canvas id="neonGrid"></canvas>
 
-  <header>
-    <h1>Noelle Silva</h1>
+  <header class="page-header">
+    <h1>📘 Educational Journey</h1>
   </header>
 
-  <div class="container">
-    <div class="main-section">
-      <img src="./assets/Noelle.webp" alt="Noelle Silva">
-      <p class="description">
-        Noelle Silva, a proud member of the Clover Kingdom's royal family and the Black Bulls, initially struggled to control her magic. 
-        Through perseverance and teamwork, she became a formidable warrior using powerful water-based spells and earned respect for her strength and growth.
-      </p>
-
-      <div class="button-group">
-        <a class="nav-button" href="../page2/index.html">← Back to Yuno</a>
-        <a class="nav-button" href="../page4/index.html">Next: Yami →</a>
+  <main class="cards-container">
+    <!-- Elementary -->
+    <div class="edu-card">
+      <div class="card-front">
+        <h2>🎒 Elementary</h2>
+        <p>Holy Family Parochial School</p>
+        <p><strong>Years:</strong> 2010 – 2016</p>
+        <p><strong>Award:</strong> St. Pedro Calungsod Award 🏅</p>
+        <img src="./assets/img/HFPS.jfif" alt="HFPS Logo" class="school-logo logo-blue" />
       </div>
     </div>
 
-    <div class="lineage-section">
-      <h2>Silva Family</h2>
-      <div class="family-member">
-        <img src="./assets/Acier Silva - Black Clover.webp" alt="Acier Silva">
-        <p>Acier Silva<br>(Mother)</p>
-      </div>
-      <div class="family-member">
-        <img src="./assets/Nebra Silva.webp" alt="Nebra Silva">
-        <p>Nebra Silva<br>(Sister)</p>
-      </div>
-      <div class="family-member">
-        <img src="./assets/Solid.webp" alt="Solid Silva">
-        <p>Solid Silva<br>(Brother)</p>
-      </div>
-      <div class="family-member">
-        <img src="./assets/Nozel.webp" alt="Nozel Silva">
-        <p>Nozel Silva<br>(Brother)</p>
+    <!-- Junior High -->
+    <div class="edu-card">
+      <div class="card-front">
+        <h2>🏫 Junior High</h2>
+        <p>Pasig Catholic College</p>
+        <p><strong>Years:</strong> 2016 – 2020</p>
+        <p><strong>Club:</strong> Altar Server ✝️</p>
+        <img src="./assets/img/PCC.png" alt="PCC Logo" class="school-logo logo-red" />
       </div>
     </div>
+
+    <!-- Senior High -->
+    <div class="edu-card">
+      <div class="card-front">
+        <h2>🎓 Senior High</h2>
+        <p>Far Eastern University</p>
+        <p><strong>Years:</strong> 2020 – 2022</p>
+        <p><strong>Strand:</strong> STEM</p>
+        <p><strong>Award:</strong> With Honors 🏅</p>
+        <img src="./assets/img/FEUSHS.png" alt="FEU SHS Logo" class="school-logo logo-green" />
+      </div>
+    </div>
+
+    <!-- College (Toggle: UST <-> FEU Tech) -->
+    <div class="college-fade-card" onclick="toggleCollege()">
+      <!-- UST -->
+      <div class="card-content ust-content active">
+        <h2>🏛 College</h2>
+        <p>University of Santo Tomas</p>
+        <p><strong>Years:</strong> 2022 – 2024</p>
+        <p><strong>Course:</strong> Electrical Engineering ⚡</p>
+        <img src="./assets/img/USTEE.jfif" alt="UST Logo" class="school-logo logo-yellow" />
+        <p style="font-size: 0.9rem;">(Click to view current)</p>
+      </div>
+
+      <!-- FEU Tech -->
+      <div class="card-content feu-content">
+        <h2>💻 College</h2>
+        <p>Far Eastern University – Institute of Technology</p>
+        <p><strong>Years:</strong> 2024 – Present</p>
+        <p><strong>Course:</strong> BS Information Technology – Cybersecurity 🛡️</p>
+        <img src="./assets/img/FEUTECH.jfif" alt="FEU Tech Logo" class="school-logo logo-green" />
+        <p style="font-size: 0.9rem;">(Click to go back)</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="btn-wrapper">
+    <a href="../page4/index.html" class="next-btn">Next ➡️</a>
   </div>
 
-  <footer>Lantan Archi Clemenz C. © 2025</footer>
+  <footer class="site-footer">
+    <p>© 2025 Archi Clemenz C. Lantan. All rights reserved.</p>
+  </footer>
 
+  <!-- Scripts -->
+  <script src="./assets/js/3.js"></script>
+  <script src="./assets/js/3.1.js"></script>
 </body>
 </html>

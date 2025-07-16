@@ -2,63 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yami Sukehiro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Project Gallery</title>
+  <link rel="stylesheet" href="./assets/css/4.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Yami Sukehiro</h1>
-  <div class="dimension-slash"></div>
-</header>
+  <!-- 🔁 Rotating Rings Canvas (behind all) -->
+  <canvas id="ringsCanvas"></canvas>
 
-<div class="container">
+  <!-- ✨ Sparkle Trail Canvas (in front of rings) -->
+  <canvas id="sparkleCanvas"></canvas>
 
-  <div class="main-profile">
-    <img src="./assets/Yami.webp" alt="Yami Sukehiro">
-    <p>
-      Yami Sukehiro is the battle-hardened and often unpredictable captain of the Black Bulls. 
-      Originally from the distant land of Hino Country, he became one of the Clover Kingdom's strongest Magic Knights, 
-      known for his Dark Magic and philosophy of "surpassing limits".
-    </p>
-  </div>
-
-  <h2 class="section-title">Black Bulls Squad</h2>
-  <div class="grid">
-    <div class="card"><img src="./assets/Asta.webp" alt="Asta"><p>Asta</p></div>
-    <div class="card"><img src="./assets/Noelle.webp" alt="Noelle"><p>Noelle Silva</p></div>
-    <div class="card"><img src="./assets/Magna.webp" alt="Magna"><p>Magna Swing</p></div>
-    <div class="card"><img src="./assets/Luck.webp" alt="Luck"><p>Luck Voltia</p></div>
-    <div class="card"><img src="./assets/Charmy.webp" alt="Charmy"><p>Charmy Pappitson</p></div>
-    <div class="card"><img src="./assets/Vanessa.webp" alt="Vanessa"><p>Vanessa Enoteca</p></div>
-    <div class="card"><img src="./assets/Gauce.webp" alt="Gauche"><p>Gauche Adlai</p></div>
-    <div class="card"><img src="./assets/Grey.webp" alt="Grey"><p>Grey</p></div>
-    <div class="card"><img src="./assets/Henry.webp" alt="Henry"><p>Henry Legolant</p></div>
-    <div class="card"><img src="./assets/Gordon.webp" alt="Gordon"><p>Gordon Agrippa</p></div>
-    <div class="card"><img src="./assets/Zora.webp" alt="Zora"><p>Zora Ideale</p></div>
-    <div class="card"><img src="./assets/Nacht.webp" alt="Nacht"><p>Nacht Faust</p></div>
-    <div class="card"><img src="./assets/Secre.webp" alt="Secre"><p>Secre Swallowtail</p></div>
-  </div>
-
-  <h2 class="section-title">Yami's Homeland: Hino Country</h2>
-  <div class="country">
-    <img src="./assets/Hino-.webp" alt="Hino Country">
-    <div class="country-text">
-      Hino Country is a distant land in the Black Clover world, inspired by traditional Japanese culture. 
-      It is known for its warrior clans and samurai-like magic users. Yami originally came from this country before 
-      he was stranded in the Clover Kingdom and began his journey as a Magic Knight.
+  <!-- 🖼️ Header -->
+  <header class="gallery-header alt-style">
+    <div class="header-bar">
+      <span class="icon">🖼️</span>
+      <h1>Project Gallery</h1>
     </div>
-  </div>
+    <p>Browse through the digital projects I've worked on.</p>
+  </header>
 
-  <div class="button-group">
-    <a class="nav-button" href="../page3/index.html">← Back to Noelle</a>
-    <a class="nav-button" href="../page5/index.html">Next: Julius →</a>
-  </div>
+  <!-- 📂 Project List -->
+  <main class="project-list">
+    <!-- Blue Lock -->
+    <section class="project-block">
+      <img src="./assets/imgs/BL.jfif" alt="Blue Lock Project" />
+      <div class="project-content">
+        <h2>Blue Lock Site</h2>
+        <p>Anime character profiles with themed styling and unique sections.</p>
+        <a href="../../Blue Lock/index.html" class="visit-btn" target="_blank">Visit Project</a>
+      </div>
+    </section>
 
-</div>
+    <!-- Black Clover -->
+    <section class="project-block">
+      <img src="./assets/imgs/BC.jfif" alt="Black Clover Project" />
+      <div class="project-content">
+        <h2>Black Clover Site</h2>
+        <p>Interactive Black Clover character pages using bold styles and effects.</p>
+        <a href="../../Black Clover/index.html" class="visit-btn" target="_blank">Visit Project</a>
+      </div>
+    </section>
+    
+    <canvas id="dotsCanvas"></canvas>
 
-<footer>Lantan Archi Clemenz C. © 2025</footer>
 
+    <!-- ➡️ Next Page -->
+    <div class="next-button">
+      <a href="../page5/index.html" class="visit-btn">➡️ Next</a>
+    </div>
+  </main>
+
+  <!-- 🔻 Footer -->
+  <footer class="gallery-footer">
+    <p>© 2025 Archi Clemenz C. Lantan</p>
+  </footer>
+
+  <!-- 📜 JavaScript -->
+  <script src="./assets/js/4.js"></script>
 </body>
 </html>
