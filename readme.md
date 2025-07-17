@@ -248,8 +248,21 @@ Each page features its own visual style, creating a cohesive yet varied user exp
 After enabling Pages in your Settings, view the site here:
 https://archi3l.github.io/WD-FINALS-LANTAN/
 
-📚 Resources & References
-Canvas tutorials (Matrix rain, particle effects)
+📚 Resources
++------------------------------+--------------------------------------------+----------------------------------------------------------------------+
+|          Title              |                  Purpose                   |                                Link                                   |
++------------------------------+--------------------------------------------+----------------------------------------------------------------------+
+| Google Fonts – Orbitron     | Main font used across pages                | https://fonts.google.com/specimen/Orbitron                            |
+| MDN Web Docs                | Reference for HTML/CSS/JS                  | https://developer.mozilla.org/                                        |
+| CSS-Tricks                  | Animation, transitions, flexbox guide      | https://css-tricks.com/                                               |
+| Matrix Rain Animation       | Background effect for Hobbies page         | https://codepen.io/P3R0/pen/MwGoKv                                    |
+| Aurora Particles            | Final page animated background             | https://github.com/matteobruni/tsparticles                            |
+| Canvas Rotating Rings       | Gallery page background effect             | https://codepen.io/ashthornton/pen/XzYjXq                             |
+| Sparkle Trail Script        | Mouse trail effect on gallery page         | https://codepen.io/arickle/pen/XKjMZY                                 |
+| Black Clover Character Images| Images used in Black Clover site          | https://blackclover.fandom.com/                                       |
+| Blue Lock Character Images  | Images used in Blue Lock site              | https://bluelock.fandom.com/                                          |
+| FEU, PCC, UST, HFPS logos   | School logos on Educational page           | Sourced via Google Images (used under fair use for academic projects) |
++------------------------------+--------------------------------------------+----------------------------------------------------------------------+
 
 CSS animation guides (hover, transitions)
 
